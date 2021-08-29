@@ -56,12 +56,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_DELETE_AROMAFM=1
     export OF_USE_SYSTEM_FINGERPRINT=1
     export OF_CHECK_OVERWRITE_ATTEMPTS=1
-    export FOX_USE_SPECIFIC_MAGISK_ZIP="$INCLUDE_PATH/Magisk-v21.4.zip"
+    export FOX_USE_SPECIFIC_MAGISK_ZIP="$INCLUDE_PATH/Magisk-v23.0.zip"
 
     # About Settings
     export OF_MAINTAINER="xvae27"
     export FOX_VERSION="R11.1_1"
-    export OF_MAINTAINER_AVATAR="$INCLUDE_PATH/Sushrut1101.png"
+    export OF_MAINTAINER_AVATAR="$INCLUDE_PATH/xvae27.png"
     export FOX_BUILD_TYPE="Stable"
 
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1510672800"; # Tue Nov 14 15:20:00 GMT 2017
@@ -99,25 +99,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_RUN_POST_FORMAT_PROCESS=1
 
 	export LC_ALL="C"
-
-    # Maintainer's Avatar Settings
-    if [ -n "$OF_MAINTAINER_AVATAR" ]; then
-        if [ ! -f "$OF_MAINTAINER_AVATAR" ]; then
-              # Some Colour Codes:
-              RED='\033[0;31m'
-              GREEN='\033[0;32m'
-              ORANGE='\033[0;33m'
-              BLUE='\033[0;34m'
-              PURPLE='\033[0;35m'
-              echo -e "${RED}-- File \"$OF_MAINTAINER_AVATAR\" not found  ...${NC}"
-              echo -e "${ORANGE}-- Downloading...${NC}"
-              mkdir -p misc/
-              curl https://raw.githubusercontent.com/OrangeFoxRecovery/avatar/fox/Sushrut1101.png >> $OF_MAINTAINER_AVATAR
-              echo -e "${BLUE}-- Successfully Downloaded the Avatar Image \"$OF_MAINTAINER_AVATAR\" ...${NC}"
-              echo -e "${PURPLE}-- Using A Custom Maintainer Avatar from the Downloaded Image \"$OF_MAINTAINER_AVATAR\" ...${NC}"
-              echo -e "${GREEN}-- Done!"
-        fi
-    fi
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
