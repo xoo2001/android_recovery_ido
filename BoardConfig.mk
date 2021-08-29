@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lenovo/A6020
+DEVICE_PATH := device/xiaomi/ido
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -40,7 +40,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := A6020
+TARGET_BOOTLOADER_BOARD_NAME := msm8916
 
 # Encryption
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw

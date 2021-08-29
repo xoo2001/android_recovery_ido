@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omni_A6020.mk
+	$(LOCAL_DIR)/omni_ido.mk
 
 COMMON_LUNCH_CHOICES := \
-	omni_A6020-eng
+	omni_ido-eng

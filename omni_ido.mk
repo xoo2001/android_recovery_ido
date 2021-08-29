@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := Lenovo Vibe K5/K5+
+PRODUCT_RELEASE_NAME := Redmi 3
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -36,10 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=msm8916
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := A6020
-PRODUCT_NAME := omni_A6020
-PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Vibe K5
-PRODUCT_MANUFACTURER := Lenovo
+PRODUCT_DEVICE := ido
+PRODUCT_NAME := omni_ido
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi 3
+PRODUCT_MANUFACTURER := Xiaomi
 
 ALLOW_MISSING_DEPENDENCIES := true
