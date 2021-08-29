@@ -2,7 +2,6 @@
 # Copyright (C) 2015-2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
 # Copyright (c) 2020 Team Win Recovery Project
-# Copyright (c) 2021 OrangeFox Recovery Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -78,6 +77,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBA_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 LZMA_RAMDISK_TARGETS := recovery
+LZMA_COMPRESSION := 1
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
@@ -92,3 +92,19 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 
 TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
+
+#SHRP_Variables
+SHRP_PATH := device/xiaomi/ido
+SHRP_MAINTAINER := xvae27
+SHRP_DEVICE_CODE := ido
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usbotg
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A-Only
+SHRP_FLASH := 1
+SHRP_DARK := true
+SHRP_OFFICIAL := true
+SHRP_EXPRESS := true
