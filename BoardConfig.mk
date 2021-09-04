@@ -77,7 +77,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBA_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 LZMA_RAMDISK_TARGETS := recovery
-LZMA_COMPRESSION := 1
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
